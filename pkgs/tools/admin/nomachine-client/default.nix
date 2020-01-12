@@ -1,8 +1,8 @@
 { stdenv, file, fetchurl, makeWrapper,
   autoPatchelfHook, jsoncpp, libpulseaudio }:
 let
-  versionMajor = "6.8";
-  versionMinor = "1";
+  versionMajor = "6.9";
+  versionMinor = "2";
   versionBuild_x86_64 = "1";
   versionBuild_i686 = "1";
 in
@@ -14,7 +14,7 @@ in
       if stdenv.hostPlatform.system == "x86_64-linux" then
         fetchurl {
           url = "https://download.nomachine.com/download/${versionMajor}/Linux/nomachine_${version}_${versionBuild_x86_64}_x86_64.tar.gz";
-          sha256 = "04qi6qbcnimc5sip1inswfjayad604b4p11cawwib7vj023lbcb3";
+          sha256 = "317ecb5d411c22dfd13c4d7a7cf6488956df07e998c8dc295155b2f8a76357fc";
         }
       else if stdenv.hostPlatform.system == "i686-linux" then
         fetchurl {
