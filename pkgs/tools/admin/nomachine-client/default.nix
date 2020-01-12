@@ -14,7 +14,7 @@ in
       if stdenv.hostPlatform.system == "x86_64-linux" then
         fetchurl {
           url = "https://download.nomachine.com/download/${versionMajor}/Linux/nomachine_${version}_${versionBuild_x86_64}_x86_64.tar.gz";
-          sha256 = "07330sxqjmzdn8kwxn9r49j28lsbp7mmrsxcyl8r32c3g355wskl";
+          sha256 = "04qi6qbcnimc5sip1inswfjayad604b4p11cawwib7vj023lbcb3";
         }
       else if stdenv.hostPlatform.system == "i686-linux" then
         fetchurl {
